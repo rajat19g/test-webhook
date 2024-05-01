@@ -59,7 +59,7 @@ def update_file():
     # Fetch the latest version of the file from the repository
     subprocess.run(['git', 'pull'])
     with open('test.txt','w') as file:
-        file.write('Final Commit made by bot')
+        file.write('Final Commit made by bot Retest')
     # Perform necessary updates to the file
     # Example: Replace placeholder values in the file with new values
 
@@ -67,7 +67,7 @@ def update_file():
     subprocess.run(['git', 'add', '.'])
     subprocess.run(['git', 'commit', '-m', 'Update file after merge'])
     subprocess.run(['git', 'push'])
-
+ 
 
 # Define a route for the root URL
 @app.route('/')
