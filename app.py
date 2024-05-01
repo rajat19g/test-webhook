@@ -33,7 +33,7 @@ def update_file():
     # Fetch the latest version of the file from the repository
     subprocess.run(['git', 'pull'])
     with open('test.txt','w') as file:
-        file.write('Commit made by bot')
+        file.write('Commit made by bot what   ')
     # Perform necessary updates to the file
     # Example: Replace placeholder values in the file with new values
 
