@@ -22,18 +22,18 @@ def handle_webhook():
         #merged_branch = payload['ref']
         #print(base_branch,merged_branch)
         # Trigger file update process
-        update_file()
+        update_file(payload)
     
         return 'Webhook received', 200
     
     else:
         return 'No actions taken', 200
 
-def update_file():
+def update_file(payload):
     # Fetch the latest version of the file from the repository
     subprocess.run(['git', 'pull'])
-    with open('test.txt','w') as file:
-        file.write('Commit made by bot what   dff d')
+    with open('test.txt','a') as file:
+        file.write('Commit made by bot what   dffd d  ssssss')
     # Perform necessary updates to the file
     # Example: Replace placeholder values in the file with new values
 
